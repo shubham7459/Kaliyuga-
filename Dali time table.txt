@@ -1,0 +1,143 @@
+/*Dali time table*/
+/*Author : shubham Date 11/09/2024*/
+#include<stdio.h>
+#include<windows.h>
+int main(){
+    char Yday[100];
+    
+    int DATE;
+    int date;
+    char mon[100];
+    int yer;
+    
+    /*block for day*/
+    const char *massage = "Enter Day:";
+    for(int i = 0;massage[i] != '\0';++i){
+        printf("%c",massage[i]);
+        Sleep(10);
+
+    }
+    scanf("%s",Yday);
+    getchar(); //to clear the newline left in the buffer 
+    /*block for months*/
+    const char *massage1 = "Enter month:";
+    for(int i = 0;massage1[i] != '\0';++i){
+        printf("%c",massage1[i]);
+        Sleep(10);
+
+    }
+    scanf("%s",&mon);
+    getchar();//to clear the newline left in the buffer 
+    /*block for date*/
+    const char *massage2 = "Enter Date:";
+    for(int i = 0;massage2[i] != '\0';++i){
+        printf("%c",massage2[i]);
+        Sleep(10);
+
+    }
+    scanf("%d",&date);
+    getchar(); //to clear the newline left in the buffer 
+    /*block for year*/
+    const char *massage3 = "Enter year:";
+    for(int i = 0;massage3[i] != '\0';++i){
+        printf("%c",massage3[i]);
+        Sleep(10);
+
+    }
+    scanf("%d",&yer);
+    getchar(); //to clear the newline left in the buffer 
+    /* Desplay the daliy thought*/
+    const char *massage14 = "To day  morning thought\n";
+    for(int i = 0;massage14[i] != '\0';++i){
+        printf("%c",massage14[i]);
+        Sleep(10);
+
+    }
+    const char *massage15 = "--------------------------------------------------------------------------------------------\n";
+    for(int i = 0;massage15[i] != '\0';++i){
+        printf("%c",massage15[i]);
+        Sleep(10);
+
+    }
+    
+    switch (date)
+    {
+    case 1:/*cases for daliy thouth*/
+    printf("");
+    const char *massage9 = "Every day is a new opportunity to shape the direction of your life and make things happen. \nWhether it’s a personal goal, a professional challenge, or a simple task, taking proactive steps towards what you want can make a world of difference. How will you create your future today?\n";
+    for(int i = 0;massage9[i] != '\0';++i){
+        printf("%c",massage9[i]);
+        Sleep(10);
+
+    }
+        break;
+    case 2:/*cases for daliy thouth*/
+    printf("");
+    const char *massage10 = "Take a moment to appreciate the new day a\nhead and set a positive intention for what you \nwant to achieve or experience today. What will you do to make the most of this fresh start?\n";
+    for(int i = 0;massage10[i] != '\0';++i){
+        printf("%c",massage10[i]);
+        Sleep(10);
+
+    }
+        break;
+    case 3:/*cases for daliy thouth*/
+    printf("");
+    const char *massage11 = "Embrace the new day with a clear mind and open heart. Every morning gives us a chance to begin a \nnew and make meaningful choices. What will you choose to focus on today to make it a great one?\n";
+    for(int i = 0;massage11[i] != '\0';++i){
+        printf("%c",massage11[i]);
+        Sleep(10);
+
+    }
+        break;
+    case 4:/*cases for daliy thouth*/
+    printf("");
+    const char *massage12 = "Start today with intention and positivity. What colors will you use to make your day vibrant and fulfilling?\n";
+    for(int i = 0;massage12[i] != '\0';++i){
+        printf("%c",massage12[i]);
+        Sleep(10);
+
+    }
+        break;
+    case 5:/*cases for daliy thouth*/
+    printf("");
+    const char *massage13 = "Today is a new day, full of possibilities" 
+    "and opportunities. Embrace it with an open heart and "
+    "a positive mindset, and let your actions reflect the "
+    "best version of yourself.\n";
+    for(int i = 0;massage13[i] != '\0';++i){
+        printf("%c",massage13[i]);
+        Sleep(10);
+
+    }
+        break;
+
+    
+    default:
+        break;
+    }
+    const char *massage16 = "--------------------------------------------------------------------------------------------\n";
+    for(int i = 0;massage16[i] != '\0';++i){
+        printf("%c",massage16[i]);
+        Sleep(10);
+
+    }
+    /* Desplay the entered date*/
+    const char *massage4 = "Entered Date\n";
+    for(int i = 0;massage4[i] != '\0';++i){
+        printf("%c",massage4[i]);
+        Sleep(10);
+
+    }
+    const char *massage0 = "                                YOUR TIME TABLE                ";
+    for(int i = 0;massage0[i] != '\0';++i){
+        printf("%c",massage0[i]);
+        Sleep(10);
+
+    }
+    /*print date in this formet  day /n month/date/year*/
+    strupr(Yday);/*strupr for upper case and strlwr for lower case*/
+    printf("%s\n",Yday);
+    strupr(mon);
+    printf("%s/%d/%d",mon,date,yer);
+    return 0;
+}

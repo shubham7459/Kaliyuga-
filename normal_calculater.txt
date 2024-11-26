@@ -1,0 +1,128 @@
+#include<stdio.h>
+int main(){
+  int candition;
+  
+  float area_of_circle,cercumperens_of_circle,area_of_square,parameter_of_square,l,b,h,first,second,
+  area_of_rectangl,parameter_of_rectangl,area_of_triangl,square_root, cube_root ;
+  printf("Enter your candition that are");
+  printf("\n1 for area of circle");
+  printf("\n2 for cercumferens of circle");
+  printf("\n3 for area of square");
+  printf("\n4 for parameter of aquare");
+  printf("\n5 for area of rectangl");
+  printf("\n6 for parameter of rectangl");
+  printf("\n7 for area of triangl");
+  printf("\n8 for square root");
+  printf("\n9 for cube root");
+  printf("\n10 for subtract");
+  printf("\n11 for add");
+  printf("\n12 for multiplication");
+  printf("\n13 for division");
+  printf("\nyour choise :");
+  
+
+  scanf("%d",&candition);
+
+  if (candition == 1){
+
+  printf("Enter the radius of circle :");
+  scanf("%f",&area_of_circle);
+  float area = 2*3.14*area_of_circle*area_of_circle;
+  printf("area of circle is %f",area);
+  }
+  if (candition == 2){
+  printf("Enter the radius of circle :");
+  scanf("%f",&cercumperens_of_circle);
+  float cercum = 2*3.14*cercumperens_of_circle;
+  printf("%f cercumferens of circle",cercum);
+  }
+  if (candition == 3){
+
+  printf("Enter the side of square :");
+  scanf("%f",&area_of_square);
+  float area = area_of_square*4;
+  printf("area of square is %f",area);
+  }
+  if (candition == 4){
+
+  printf("Enter the side of square :");
+  scanf("%f",&parameter_of_square);
+  float parameter = area_of_square*area_of_square;
+  printf("parameter of square  is %f",parameter);
+  }
+  if (candition == 5){
+
+  printf("Enter the length of ractangl :");
+  scanf("%f",&l);
+  printf("Enter the wrath of ractangl :");
+  scanf("%f",&b);
+  float area = l*b;
+  printf("area of rectangl is %f",area);
+  }
+  if ( candition  == 6){
+    printf("Enter the length of ractangl :");
+    scanf("%f",&l);
+    printf("Enter the wrath of ractangl :");
+    scanf("%f",&b);
+    float parameter = 2*(l+b);
+    printf("parameter of ractangl is %f",parameter);
+  }
+  if (candition == 7){
+    printf("Enter the length of triangle :");
+    scanf("%f",&l);
+    printf("Enter the hight of triangle :");
+    scanf("%f",&b);
+    float area = 0.5*l*h;
+    printf("area of triangle is %f",area);
+  }
+  if (candition == 8){
+
+  printf("Enter the number:");
+  scanf("%f",&square_root);
+  float root = square_root*square_root;
+  printf("square root of %f",root);
+  }
+  if (candition == 9){
+    printf("Enter the number:");
+    scanf("%f",&cube_root);
+    float root = cube_root*cube_root*cube_root;
+    printf("cube root of %f",root);
+  }
+  if (candition == 10){
+    printf("Enter the first  numder :");
+    scanf("%f",&first);
+    printf("Enter the second number:");
+    scanf("%f",&second);
+    float sub = first-second;
+    printf("subtracted value is %f",sub);
+  }
+  
+  if (candition == 11){
+    printf("Enter the first  numder :");
+    scanf("%f",&first);
+    printf("Enter the second number:");
+    scanf("%f",&second);
+    float add = first+second;
+    printf("add value is %f",add);
+  }
+  if (candition == 12){
+    printf("Enter the first  numder :");
+    scanf("%f",&first);
+    printf("Enter the second number:");
+    scanf("%f",&second);
+    float mul = first*second;
+    printf("after multiplication %f",mul);
+  }
+  if (candition == 13){
+    printf("Enter the first  numder :");
+    scanf("%f",&first);
+    printf("Enter the second number:");
+    scanf("%f",&second);
+    float division = first/second;
+    printf("after division %f",division);
+  }
+
+  
+  
+  return 0;
+}
